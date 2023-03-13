@@ -1,0 +1,58 @@
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+
+1 ICON Clock.ico
+2 ICON NoClock.ico
+
+STRINGTABLE
+{
+  101, "Не удалось создать таймер"
+  102, "Часы \227 Ошибка"
+  103, "Часы уже запущены"
+  104, "Часы"
+  105, "Не удалось создать окно"
+}   
+
+1 MENU
+{
+  POPUP ""
+  {
+    MENUITEM "&Восстановить", 100, GRAYED
+    MENUITEM "&Свернуть", 101
+    MENUITEM SEPARATOR
+    MENUITEM "Секунд&ы", 102, CHECKED
+    MENUITEM SEPARATOR
+    MENUITEM "&О программе...", 103
+    MENUITEM SEPARATOR
+    MENUITEM "&Закрыть\tAlt + F4", 104
+  }
+}
+
+1 VERSIONINFO 
+FILEVERSION 1, 20, 3, 10
+PRODUCTVERSION 1, 20, 3, 10
+FILEOS VOS_NT_WINDOWS32
+FILETYPE VFT_APP
+{
+ BLOCK "StringFileInfo"
+ {
+  BLOCK "041904E3"
+  {
+   VALUE "CompanyName", "iaSoft (Иванов Алексей) / Caravan of Love\000"
+   VALUE "FileDescription", "Часы\000"
+   VALUE "FileVersion", "1.20.3.10\000"
+   VALUE "InternalName", "Clock\000"
+   VALUE "LegalCopyright", "© 2001, iaSoft (Иванов Алексей)\000"
+   VALUE "OriginalFilename", "Clock.exe\000"
+   VALUE "ProductName", "Часы\000"
+   VALUE "ProductVersion", "1.20\000"
+   VALUE "Comments", "Программа является свободно распространяемой (Freeware) и распространяется по принципу КАК ЕСТЬ (AS IS).\000"
+  }
+
+ }
+
+ BLOCK "VarFileInfo"
+ {
+  VALUE "Translation", 0x419, 1251
+ }
+
+}
